@@ -1,0 +1,371 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+header:hover{
+    background-color: #efceff;
+    color: #fff;
+    transition: 0.7s ease;
+}
+.logo img{
+    width: 200px;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    color: #2a003e;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.42s ease;
+}
+.nav a:hover{
+    color: #ffffff;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #2a003e;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.2);
+    color:  #f8f8f8;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #2a003e;
+    z-index: 10001;
+    cursor: pointer;
+}
+#menu-icon:hover{
+    font-size: 35px;
+    color: #69009a;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+/*1st doughnut part*/
+section{
+    padding: 5% 10%;
+}
+.home-doughnut{
+    width: 100%;
+    height: 100vh;
+    background-color: #ebbfff;/*
+    background-image: url(IMAGE/doughnut.jpg);
+    background-position: center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    filter: opacity(10%);*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-doughnut .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex img{
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+.home-text h5{
+    color: #7400aa;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.home-text h1{
+    color: #2a003e;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    transition: 0.5s ease; 
+}
+.home-text h1:hover{
+    color: rgb(255, 255, 255);
+}
+.home-text p{
+    color: #c549ff;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.home-btn{
+    display: inline-block;
+    /*color: #111;*/
+    color: #2a003e;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #2a003e;
+    border-radius: 5px;
+    padding: 12px 25px;
+    transition: 0.5s ease; 
+}
+.home-btn:hover{
+    background-color:  #2a003e;
+    border: 2px solid #2a003e;
+    color: #fff;
+}
+.home-btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 50%;
+}
+.down-arrow i{
+    font-size: 30px;
+    color: #2a003e;
+    /*border: 2px solid #2c2c2c;*/
+    border: 2px solid #2a003e;
+    border-radius: 30px;
+    padding: 12px 12px;
+}
+.down-arrow i:hover{
+    background-color:  #2a003e;
+    color: white;
+    border: 2px solid #2a003e;
+    transition: 0.5s ease;
+}
+
+/*doughnut type section*/
+.doughnut-text h2{
+    color: #c549ff;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.doughnut-text span{
+    color: #2a003e;
+}
+.doughnut-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+.row{
+    position: relative;
+    transition: all 0.40s;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.doughnut-product-text h5{
+    position: absolute;
+    top: 13.5px;
+    left: 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: #2a003e;
+}
+.heart-icon:hover{
+    color: #ff8c00;
+}
+.ratting i{
+    color: #ff8c00;
+    font-size: 18px;
+}
+.ratting i:hover{
+    color: #2a003e;
+    font-size: 18px;
+}
+.price h4{
+    color: #111;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.price p{
+    color: #151515;
+    font-size: 13px;
+    font-weight: 600;
+}
+.dougnut-reviews{
+    background-color: #df9aff;
+}
+.words{
+    text-align: center;
+}
+.words h3{
+    color: #2a003e;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.words img{
+    width: 120px;
+    height: auto;
+    border-radius: 100px;
+    margin: 10px 0;
+}
+.words p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.words h2{
+    font-size: 22px;
+    color: #2a003e;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+/*update section css*/
+.up-center-text h2{
+    text-align: center;
+    color: #2a003e;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.cart img{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+}
+.cart h5{
+    color: #c549ff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.cart h4{
+    color: #2a003e;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.cart p{
+    color: #c549ff;
+    font-size: 15px;
+    max-width: 300px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+.cart h6{
+    color: #2a003e;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*contact section css*/
+.contact{
+    background-color: #df9aff;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+    gap: 3rem;
+}
+.first-info img{
+    width: 180px;
+    height: auto;
+}
+.contact-info h4{
+    color: #2a003e;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    color: #f7e8ff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    margin-bottom: 0px;
+    cursor: pointer;
+    transition:  all 0.42s;
+}
+.contact-info p:hover{
+    color: #b923ff;
+}
+.social-icon{
+    color: #2a003e;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all 0.42;
+}/*
+.social-icon:hover{
+    transform: scale(1.3);
+}*/
+footer .end-text{
+    background-color: #efcdff;
+    text-align: center;
+    padding: 20px;
+}
+footer .end-text p{
+    color: #b923ff;
+    text-transform: capitalize;
+}
+footer .end-text #span{
+    font-weight: 600;
+    color: #2a003e;
+}
+.end-text #span:hover{
+    color: #c549ff;
+}
